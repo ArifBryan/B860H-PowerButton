@@ -1,12 +1,9 @@
 [Unit]
 Description=Power button handler
 After=network.target
-StartLimitIntervalSec=0
 
 [Service]
-Type=simple
-Restart=always
-RestartSec=1
+Type=oneshot
 User=root
 ExecStart=/usr/local/sbin/powerButton.sh
 
