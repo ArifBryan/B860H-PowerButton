@@ -12,7 +12,8 @@ do
     poweroff
 
     while :
-    do :
+    do
+	  sleep 1
     done
   fi
 done
